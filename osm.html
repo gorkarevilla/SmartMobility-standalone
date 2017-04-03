@@ -39,15 +39,11 @@
 
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-  e.src='//www.google-analytics.com/analytics.js';
-  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-  ga('create','UA-93728300-1','auto');ga('send','pageview');
-</script>
+  <!-- LEAFLET HOSTED VERSION-->
+  <link rel="stylesheet" href="leaflet/leaflet.css" />
+  <script src="leaflet/leaflet.js"></script>
+  <script type="text/javascript" src="leaflet/leafletembed.js"></script>
+  <!-- END LEAFLET-->
 
 </head>
 <body>
@@ -63,7 +59,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Smart Mobility</a>
+      <a class="navbar-brand" href="#">Smart Mobility / MAP</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <form class="navbar-form navbar-right" role="form">
@@ -79,32 +75,23 @@
   </div>
 </nav>
 
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
-  <div class="container">
-    <h1>Welcome to Smart Mobility</h1>
-    <p>Smart Mobility will help you to understand the how can the drivers improve their driving behaviour and decrease the fuel comsuption.</p>
-    <p><a class="btn btn-primary btn-lg" href="osm.html" role="button">View the Map &raquo;</a></p>
-  </div>
-</div>
-
 <div class="container">
   <!-- Example row of columns -->
   <div class="row">
     <div class="col-md-4">
-      <h2>Insert Data</h2>
-      <p>Here you can add info about your trips and check it on the map.</p>
-      <p><a class="btn btn-default" href="#" role="button">Insert your data &raquo;</a></p>
+      <h2>Menu</h2>
+      <p>Here is the menu</p>
+      
     </div>
-    <div class="col-md-4">
-      <h2>Option2</h2>
-      <p>Do option 2</p>
-      <p><a class="btn btn-default" href="#" role="button">Go to option2 &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-      <h2>Option3</h2>
-      <p>Do option 3</p>
-      <p><a class="btn btn-default" href="#" role="button">Go to option3 &raquo;</a></p>
+    <div class="col-md-8">
+      <h2>Map</h2>
+       <div id="map"></div>
+        <script>
+        initmap();
+      
+        </script>
+
+
     </div>
   </div>
 
@@ -113,7 +100,7 @@
   <footer>
     <p>&copy; Gorkarevilla.com 2017</p>
   </footer>
-</div> <!-- /container -->        
+</div> <!-- /container -->
 <script src="js/jquery-3.2.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery-3.2.0.min.js"><\/script>')</script>
 
@@ -121,6 +108,14 @@
 
 <script src="js/plugins.js"></script>
 
-
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-93728300-1','auto');ga('send','pageview');
+</script>
 </body>
 </html>
